@@ -12,7 +12,7 @@ HTML_TAGS_PATTERN = re.compile(r'<[^>]*?>')
 
 ROFI_COMMAND = ('rofi',
                 '-dmenu',
-                '-p', 'Notifications',
+                '-p', '󰂚',
                 '-markup',
                 '-kb-accept-entry', 'Control+j,Control+m,KP_Enter',
                 '-kb-remove-char-forward', 'Control+d',
@@ -25,7 +25,8 @@ ROFI_COMMAND = ('rofi',
                 '-sep', '\\0',
                 '-format', 'i',
                 '-eh', '2',
-                '-lines', '10')
+                '-lines', '10',
+				'-theme', '~/.config/polybar/midnight/scripts/rofi/launcher.rasi')
 
 
 def strip_tags(value: str) -> str:
